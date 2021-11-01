@@ -1,0 +1,45 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+
+int main()
+{
+
+
+
+
+// GAME first of this programms
+int number,guess,nguess=1;            //RANDOM NUMBER IS PRINT
+srand(time(0));
+number = rand()%100+1;                                //here we have to add the range like (%100+1;)
+printf("the number is %d \n",number);
+
+//FROM HERE LOOP IS RUNNING
+
+do{
+    printf("guess  the number between 1 to 100 \n ");
+    scanf("%d",&guess);
+    if (guess>number){
+        printf("PLEASE ENTER THE LOWER NUMBER \n ");
+
+    }
+    else if(guess<number){
+            printf("PLEASE ENTER THE HIGHER NUMBER \n ");
+
+    }
+    else{
+            printf("CONGRATURATION SIR YOU WON THE GAME \n YOUR ATTEMPTED IS %d",nguess);
+
+
+    }
+    nguess++;
+}while(guess!=number);
+
+
+
+
+
+
+
+    return 0;
+}
