@@ -1,1 +1,1 @@
-# the-c-programm-guess-the-number
+# C PROGRAMMING
